@@ -1,5 +1,4 @@
-# MultilayerAssociateMemory (MultilayerHNN)
-
+# SuperlinearAssociativeMemory
 Codebase for hardware-adaptive learning in memristor-based associative memory with a multilayer structure.
 
 This repository accompanies the paper:
