@@ -1,0 +1,19 @@
+# Core
+numpy
+
+# PyTorch + vision
+torch
+torchvision
+torchsummary
+
+# Visualization
+matplotlib
+
+# Image processing
+scikit-image
+
+# CLI / config
+configargparse
+
+# Progress bar
+tqdm
