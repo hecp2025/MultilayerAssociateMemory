@@ -69,7 +69,7 @@ Demo: run on the provided setting (MNIST)
 ## Train
 ```bash
 python multilayer.py \
-  --dimension 784 \
+  --dimension 64 \
   --interval 1 \
   --train-eval 'train' \
   --variation '0.0' \
@@ -84,7 +84,7 @@ python multilayer.py \
 ## Evaluate
 ```bash
 python multilayer.py \
-  --dimension 784 \
+  --dimension 64 \
   --interval 1 \
   --train-eval 'eval' \
   --variation '0.0' \
