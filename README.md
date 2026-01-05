@@ -46,7 +46,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 ---
-## Quick start
+## Installation
 ## Train
 python multilayer.py \
   --dimension 784 \
