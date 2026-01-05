@@ -49,6 +49,7 @@ pip install -r requirements.txt
 ---
 ## Installation
 ## Train
+```bash
 python multilayer.py \
   --dimension 784 \
   --interval 1 \
@@ -61,9 +62,10 @@ python multilayer.py \
   --binary True \
   --max-pattern 64 \
   --min-pattern 1
-
+```
 ---
 ## Evaluate
+```bash
 python multilayer.py \
   --dimension 784 \
   --interval 1 \
@@ -76,10 +78,10 @@ python multilayer.py \
   --binary True \
   --max-pattern 64 \
   --min-pattern 1
-
+```
 ---
 ## Key CLI arguments (summary)
-
+```bash
 --dimension: input dimension (MNIST flattened is 784)
 
 --train-eval: 'train' or 'eval'
@@ -99,3 +101,4 @@ python multilayer.py \
 --seed: random seed for reproducibility
 
 --interval: logging / evaluation interval (implementation-defined)
+```
