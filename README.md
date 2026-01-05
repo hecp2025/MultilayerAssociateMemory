@@ -44,3 +44,55 @@ python -m venv .venv
 source .venv/bin/activate
 
 pip install -r requirements.txt
+
+
+Quick start
+Train
+python multilayer.py \
+  --dimension 784 \
+  --interval 1 \
+  --train-eval 'train' \
+  --variation '0.0' \
+  --stuck '0.0' \
+  --corruption 0.05 \
+  --seed 1 \
+  --dataset 'mnist' \
+  --binary True \
+  --max-pattern 64 \
+  --min-pattern 1
+
+Evaluate
+python multilayer.py \
+  --dimension 784 \
+  --interval 1 \
+  --train-eval 'eval' \
+  --variation '0.0' \
+  --stuck '0.0' \
+  --corruption 0.05 \
+  --seed 1 \
+  --dataset 'mnist' \
+  --binary True \
+  --max-pattern 64 \
+  --min-pattern 1
+
+Key CLI arguments (summary)
+
+--dimension: input dimension (MNIST flattened is 784)
+
+--train-eval: 'train' or 'eval'
+
+--dataset: dataset name (e.g., 'mnist')
+
+--binary: whether to binarize patterns
+
+--corruption: input corruption ratio / noise level for recall tests
+
+--variation: device variation strength (0.0 = ideal)
+
+--stuck: stuck-at-fault ratio / level (0.0 = no faults)
+
+--max-pattern, --min-pattern: pattern count sweep range
+
+--seed: random seed for reproducibility
+
+--interval: logging / evaluation interval (implementation-defined)
