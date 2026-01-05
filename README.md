@@ -102,3 +102,15 @@ python multilayer.py \
 
 --interval: logging / evaluation interval (implementation-defined)
 ```
+
+## Citation
+
+If you use this code in academic work, please cite the associated paper:
+
+```bibtex
+@article{multilayer_associate_memory,
+  title   = {A Hardware-Adaptive Learning Algorithm for Superlinear-Capacity Associative Memory on Memristor Crossbars},
+  author  = {Authors},
+  journal = {To appear},
+  year    = {2025},
+}
