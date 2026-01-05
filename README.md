@@ -138,7 +138,7 @@ Add a new dataset option (or replace the MNIST loader) in the dataset-loading pa
 Run with --dataset <your_dataset_name> and adjust --dimension, --binary, and other flags accordingly.
 
 ## Reproducing results in the manuscript
-By utilze the running code before, and run at different parameter , we cna reproduce the results.
+By running the commands above with different parameter settings, you can reproduce the results reported in the manuscript.
 
 ## Citation
 
