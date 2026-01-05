@@ -11,7 +11,6 @@ This repository accompanies the paper:
 ## What’s inside
 
 - **Hardware-adaptive (device-aware) training** for associative memory under device non-idealities  
-  - `variation`: device-to-device variation noise level  
   - `stuck`: stuck-at-fault ratio (or related fault rate)
 - **Multilayer Hopfield-style associative memory** experiments (e.g., MNIST patterns)
 - Utilities and a memristor simulation module
@@ -82,7 +81,8 @@ python multilayer.py \
   --max-pattern 64 \
   --min-pattern 1
 ```
-Evaluate
+## Evaluate
+```bash
 python multilayer.py \
   --dimension 784 \
   --interval 1 \
@@ -95,8 +95,9 @@ python multilayer.py \
   --binary True \
   --max-pattern 64 \
   --min-pattern 1
+```
 
-Expected output
+## Expected output
 
 The script prints progress and evaluation metrics to the console (e.g., recall accuracy / capacity-related metrics).
 
@@ -104,9 +105,9 @@ If the code saves figures/results, specify the output path here (e.g., ./results
 
 Expected runtime (normal desktop)
 
-(Fill in after one run) e.g., max-pattern=64 typically completes in ~1–5 minutes on CPU.
+(Fill in after one run) e.g., max-pattern=64 typically completes in ~1–5 minutes on GPU.
 
-Key CLI arguments (summary)
+## Key CLI arguments (summary)
 
 --dimension: input dimension (MNIST flattened is 784)
 
