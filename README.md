@@ -45,7 +45,7 @@ source .venv/bin/activate
 
 pip install -r requirements.txt
 
-
+---
 ## Quick start
 ## Train
 python multilayer.py \
@@ -61,6 +61,7 @@ python multilayer.py \
   --max-pattern 64 \
   --min-pattern 1
 
+---
 ## Evaluate
 python multilayer.py \
   --dimension 784 \
@@ -75,6 +76,7 @@ python multilayer.py \
   --max-pattern 64 \
   --min-pattern 1
 
+---
 ## Key CLI arguments (summary)
 
 --dimension: input dimension (MNIST flattened is 784)
